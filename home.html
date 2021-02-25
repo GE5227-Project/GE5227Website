@@ -14,25 +14,44 @@
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
+<h1>This is the Main/Our Team page</h1>
 
+    
+<div class="mugshots">
+  
+  <!-- Photo grid -->
+
+    <div class="row-one">
+        <img src="placeholder_female.jpg" style="width:30%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="placeholder_female.jpg" style="width:30%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+    </div>
+
+    <div class="row-two">
+        <img src="placeholder_female.jpg" style="width:30%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+        <img src="placeholder_male.jpg" style="width:30%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+    </div>
+
+</div>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+
+</script>
 </body>
 </html>

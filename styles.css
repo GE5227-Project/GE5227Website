@@ -27,3 +27,11 @@
 body {
     margin-top: 50px; /* Add a top margin to avoid content overlay */
 }
+
+.mugshots {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
