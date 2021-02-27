@@ -1,3 +1,4 @@
+/* Navigation bar */
 .navbar {
     background-color: #333;
     position: fixed; /* Set the navbar to fixed position */
@@ -62,6 +63,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 /* Main content */
 body {
