@@ -32,7 +32,6 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 100px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    overflow-x: hidden;
 }
 
 /* Links inside the navbar */
@@ -190,12 +189,27 @@ body {
 }
 
 .main-text {
-    padding: 200px 15%;
+    padding: 220px 15% 50px 15%;
     text-align: center;
     text-align: justify;
     color: #777;
     background-color: white;
-    height: 1000px;
 }
 
+.main-text-img {
+    padding: 100px 20% 120px 20%;
+    text-align: center;
+    color: #777;
+    background-color: white;
+}
+
+.footnote {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0 20px 0;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
 
