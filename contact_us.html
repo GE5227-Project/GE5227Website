@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+<?php include 'sendemail.php'; ?>
 
-<div class="navbar">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles-contactus.css">
+
+      
+    <div class="navbar">
     <a href="home.html">Home</a>
     <a href="our_team.html">Our Team</a>
     <div class="dropdown">
@@ -25,11 +29,50 @@
         </div>
     </div>
     <a href="contact_us.html">Contact Us</a>
-</div>
-</head>
-<body>
+        
+      </div>
 
-<h1>This is supposed to be the "Contact Us" page</h1>
+  </head>
+    
+  <body>
 
-</body>
+    <!--alert messages start-->
+    <?php echo $alert; ?>
+    <!--alert messages end-->
+
+    <!--contact section start-->
+       <div class="contact-section">
+       
+       <div class="contact-map">
+           
+           <h2>Locate Us</h2>
+           <iframe width="650" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="NUS Geo directions" src="//msc2020.maps.arcgis.com/apps/Embed/index.html?webmap=69ec4d65e2074379a013024c552fbf10&extent=103.7707,1.2947,103.7721,1.2957&home=true&zoom=true&previewImage=false&scale=true&search=true&searchextent=true&basemap_gallery=true&disable_scroll=true&theme=light&marker=103.771597;1.295238;;National%20University%20of%20Singapore;;Faculty%20of%20Arts%20and%20Social%20Science"></iframe>
+        
+       </div>
+
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you. If you have any queries, do drop us a note in the form below.</p>
+        <form class="contact" action="" method="post">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" name="submit" class="send-btn" value="Send">
+        </form>
+      </div>
+    </div>
+      
+
+    <!--contact section end-->
+
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
+    
+      
+
+  </body>
 </html>
+      
