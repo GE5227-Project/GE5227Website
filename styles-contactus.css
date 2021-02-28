@@ -4,6 +4,8 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     left: 0;
+    font-family: Helvetica, sans-serif;
+    
 }
 
 /* Links inside the navbar */
@@ -28,7 +30,7 @@
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -63,45 +65,26 @@
   display: block;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 body{
-  margin-top: 100px;
-  min-height: 100vh;
+  margin-top:10px;
   background: url(background.png) no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor:url(
-    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
+  max-width: 100%;
+  cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
 ///#cursor credited to https://codepen.io/cubeghost/pen/dPeQqR///
 }
 
 
-
-.contact-map{
-    max-width: 100%;
-    margin-top: 10px;
-    margin-bottom: 130px;
-    margin-right:50px;
-    margin-left: 50px;
-    align-content: center;
-}
-
-.contact-map h2{
+.contact-map {
   color: #48494B;
   text-align: center;
   font-size: 35px;
   text-transform: uppercase;
+  margin-top: 100px;
   margin-bottom: 30px;
+  width: 100%;
 }
-
 
 .contact-form h2{
   color: #48494B;
@@ -109,6 +92,7 @@ body{
   font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  font-family: Georgia, sans-serif;
 }
 
 .contact-form p{
@@ -117,26 +101,28 @@ body{
   text-align: center;
   font-size: 15px;
   margin-bottom: 30px;
-  
+  font-family: Helvetica, sans-serif;
 }
 
 .contact-form .text-box{
   background: #000;
   color: #fff;
   border: none;
-  width: calc(50% - 10px);
+  width: 100%;
   height: 50px;
   padding: 12px;
   font-size: 15px;
   border-radius: 5px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  margin-right: 12px;
   opacity: 0.9;
 
 }
 
-.contact-form .text-box:first-child{
+.contact-form .text-box: first-child{
   margin-right: 15px;
+  margin-left: 15px;
 }
 
 .contact-form textarea{
@@ -226,4 +212,4 @@ body{
   border-radius: 4px;
 }
 
-      
+
