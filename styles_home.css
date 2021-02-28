@@ -1,0 +1,215 @@
+/* Banner above navigation bar */
+.banner {
+    position: fixed;
+    background-image: url("banner-image.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+.banner-caption {
+    position: fixed;
+    top: 25px;
+    height: 75px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.banner-caption span.border {
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 100px; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 15px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 12px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: grey;
+  color:black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #f2f2f2;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Landing page and parallax scrolling */
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%; /* make the background image fit the whole screen */
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg {
+    /* Background image */
+    background-image: url("home-image.png");
+    
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+    opacity: 1;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-source {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3%;
+    height: 3%;
+    padding: 15px;
+    text-align: center;
+    color: #000;
+}
+
+.caption-container {
+    top: 0;
+    width: 100%;
+    height: 550px;
+}
+
+.caption {
+    position: sticky;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: transparent;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.scroll-invite {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    animation-name: blinker;
+    animation-duration: 2.1s;
+    animation-timing-function: cubic-bezier(.5,0,1,1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-text {
+    padding: 220px 15% 50px 15%;
+    text-align: center;
+    text-align: justify;
+    color: #777;
+    background-color: white;
+}
+
+.main-text-img {
+    padding: 100px 20% 120px 20%;
+    text-align: center;
+    color: #777;
+    background-color: white;
+}
+
+.footnote {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 5px 0 20px 0;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+}
+
