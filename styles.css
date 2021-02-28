@@ -5,6 +5,7 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     left: 0;
+    z-index: 10;
 }
 
 /* Links inside the navbar */
@@ -67,13 +68,25 @@
 
 /* Main content */
 body {
-    margin-top: 50px; /* Add a top margin to avoid content overlay */
+    margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid grey;
+    margin-left: 25%;
+    width: 50%;
 }
 
 .mugshots {
-    position: fixed;
-    top: 20%;
-    left: 10%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1100px;
+    height: 1200px;
 }
 
 .overlay {
@@ -83,45 +96,52 @@ body {
     left: 0;
     right: 0;
     height: 100%;
-    width: 50%;
+    width: 100%;
     opacity: 0;
     transition: 1s ease;
-    background-color: #ba7300;
 }
 
 .img-box {
     position: relative;
-    width: 50%;
+    float:left;
+    width: 500px;
+    height: 500px;
+    margin-bottom:100px;
 }
 
 .img-box img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .img-box:hover > .overlay {
-    opacity: 0.3;
+    opacity: 1;
     cursor: pointer;  
 }
 
 .img-box2 {
     position: relative;
-    width: 50%;
+    float:left;
+    width: 500px;
+    height: 500px;
 }
 
 .img-box2 img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .img-box2:hover > .overlay {
-    opacity: 0.3;
+    opacity: 1;
     cursor: pointer;  
 }
 
 .text {
     color: white;
-    font-size: 20px;
+    text-shadow: 2px 2px 8px black;
+    white-space: nowrap;
+    opacity: 1;
+    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
