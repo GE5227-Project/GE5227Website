@@ -6,10 +6,12 @@ const popupShiyun = document.querySelector('.popup-shiyun');
 const popupWenling = document.querySelector('.popup-wenling');
 const popupYujun = document.querySelector('.popup-yujun');
 const popupJeremias = document.querySelector('.popup-jeremias');
-const cover  = document.querySelector('.cover');
+const cover = document.querySelector('.cover');
+const close = document.querySelectorAll('.close');
 
 var activePerson;  //requires bugfixing for this
 var activeUrl;
+var popupOpen = false;
 
 overlayShiyun.addEventListener('click', () => {
     storeActivePerson(popupShiyun);
@@ -31,8 +33,12 @@ overlayJeremias.addEventListener('click', () => {
     storeActiveUrl('about_us.html#Liew Jeremias');
     openPopup();
 });
-cover.addEventListener('click', closePopup);
 
+for (i = 0; i < close.length; i++) {
+    close[i].addEventListener('click', closePopup);
+}
+
+cover.addEventListener('click', closePopup);
 
 function storeActivePerson(person) {
     activePerson = person;
@@ -43,13 +49,18 @@ function storeActiveUrl(url) {
 }
 
 function openPopup() {
-    cover.classList.toggle('fade');
-    activePerson.classList.toggle('fade');
-    
+    if (popupOpen == false) {
+        popupOpen = true;
+        cover.classList.toggle('fade');
+        activePerson.classList.toggle('fade');
+    }  
 }
 function closePopup() {
-    cover.classList.toggle('fadeout');
-    activePerson.classList.toggle('fadeout');
+    if (popupOpen == true) {
+        popupOpen = false;
+        cover.classList.toggle('fade');
+        activePerson.classList.toggle('fade');
+    }  
 }
 
  function visitPage(){
