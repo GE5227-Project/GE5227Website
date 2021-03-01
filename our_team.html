@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Our Team</title>
     <link rel="stylesheet" href="styles_ourteam.css">
+    <script src="script_ourteam.js" defer></script>
 
 <div class="navbar">
     <a href="home.html">Home</a>
@@ -32,49 +33,101 @@
 <h1> Meet The Team:</h1>
 <hr>    
 
-<div class="mugshots">
+<div class="cover"></div>
+
+<div class="popup-shiyun">
+    <div class="popup-img">
+        <img src="images/shiyun.jpg" style="width: 400px;height: 600px">
+    </div>
+    <div class="text-box">
+        <h1>Ho Shi Yun<h1>
+        <h1>Ho Shi Yun<h1>
+        <p>text here text here text here text here text here text here text here text here text here text here text here text here 
+            text here text here text here text here text here text here text here text here text here </p>
+    </div>
+    <button onclick="visitPage();">Detailed Biography</button>
+</div>
+
+<div class="popup-wenling">
+    <div class="popup-img">
+        <img src="images/wenling.jpg" style="width: 400px;height: 600px">
+    </div>
+    <div class="text-box">
+        <h1>Lyu Wenling<h1>
+        <p>text here text here text here text here text here text here text here text here text here text here text here text here 
+            text here text here text here text here text here text here text here text here text here </p>
+    </div>
+    <button onclick="visitPage();">Detailed Biography</button>
+</div>
+        
+<div class="popup-yujun">
+    <div class="popup-img">
+        <img src="images/yujun.jpg" style="width: 400px;height: 600px">
+    </div>
+    <div class="text-box">
+        <h1>Hou Yujun<h1>
+        <p>text here text here text here text here text here text here text here text here text here text here text here text here 
+            text here text here text here text here text here text here text here text here text here </p>
+    </div>
+    <button onclick="visitPage();">Detailed Biography</button>
+</div>
+        
+<div class="popup-jeremias">
+    <div class="popup-img">
+        <img src="images/jeremias.jpg" style="width: 400px;height: 600px">
+    </div>
+    <div class="text-box">
+        <h1>Jeremias Liew<h1>
+        <p>text here text here text here text here text here text here text here text here text here text here text here text here 
+            text here text here text here text here text here text here text here text here text here </p>
+    </div>
+    <button onclick="visitPage();">Detailed Biography</button>
+</div>
+   
+
     
-  
+<div class="mugshots">  
   <!-- Photo grid -->
-    <a href="about_us.html#Ho Shi Yun">
+
     <div class="img-box" style="margin-right: 100px">  <!-- Not sure why the first child css isnt working ugh -->
         <img src="images/shiyun_sepia.jpg" alt="Ho Shi Yun">
             <div class="overlay">
-                <img src="images/shiyun_square.jpg">
-                <div class="text">Ho Shi Yun</div>
+                <div class="overlay-shiyun">
+                    <img src="images/shiyun_square.jpg">
+                    <div class="text">Ho Shi Yun</div>
+                </div>
             </div>
     </div>
-    </a>
-    
-    <a href="about_us.html#Lyu Wenling">
+
     <div class="img-box">
         <img src="images/wenling_sepia.jpg" alt="Lyu Wenling">
             <div class="overlay">
-                <img src="images/wenling_square.jpg">
-                <div class="text">Lyu Wenling</div>
+                <div class="overlay-wenling">
+                    <img src="images/wenling_square.jpg">
+                    <div class="text">Lyu Wenling</div>
+                </div>
             </div>
-    </div>
-    </a>    
+    </div> 
 
-    <a href="about_us.html#Hou Yujun">
     <div class="img-box2" style="margin-right: 100px">
         <img src="images/yujun_sepia.jpg" alt="Hou Yujun">
             <div class="overlay">
-                <img src="images/yujun_square.jpg">
-                <div class="text">Hou Yujun</div>
+                <div class="overlay-yujun">
+                    <img src="images/yujun_square.jpg">
+                    <div class="text">Hou Yujun</div>
+                </div>
             </div>
     </div>
-    </a>    
         
-    <a href="about_us.html#Liew Jeremias">
     <div class="img-box2">
         <img src="images/jeremias_sepia.jpg" alt="Jeremias Liew">
             <div class="overlay">
-                <img src="images/jeremias_square.jpg">
-                <div class="text">Jeremias Liew</div>
+                <div class="overlay-jeremias">
+                    <img src="images/jeremias_square.jpg">
+                    <div class="text">Jeremias Liew</div>
+                </div>
             </div>
-    </div>
-    </a>    
+    </div>  
 
 </div>
 <script>
