@@ -68,16 +68,14 @@
 
 /*formatting for fading imagery*/
 .hover01{
-    max-width: 100%;
-    margin-top: 10%;
-    margin-bottom: 300px;
-    padding-right: 300px;
-    padding-left: 300px;
+    margin-top: 12em;
+    margin-bottom: 12em;
     font-weight: 300;
     font-family: Helvetica, sans-serif;
     text-align: center;
     display: inline-flex;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
 
 }
 
@@ -88,4 +86,13 @@
 
 .hover01 figure:hover img {
     filter:blur(2px);
+}
+
+/*Adjustment to the respective media screen sizes*/
+@media screen and (max-width: 950px){
+  
+    .hover01 figure img{
+        width:100%
+        }  
+
 }

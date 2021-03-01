@@ -43,7 +43,8 @@
   position: absolute;
   background-color: #333;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px 
+  rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -67,7 +68,15 @@
 
 /*formatting for fading imagery*/
 .hover01{
-    max-width: 100%;
+    margin-top: 12em;
+    margin-bottom: 12em;
+    font-weight: 300;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    /*max-width: 100%;
     margin-top: 10%;
     margin-bottom: 300px;
     padding-right: 300px;
@@ -76,7 +85,7 @@
     font-family: Helvetica, sans-serif;
     text-align: center;
     display: inline-flex;
-    align-items: center;
+    align-items: center;*/
 
 }
 
@@ -124,4 +133,14 @@ body, html {
 
 .navbar{
     position: absolute;
+}
+
+
+/*Adjustment to the respective media screen sizes*/
+@media screen and (max-width: 950px){
+  
+    .hover01 figure img{
+        width:100%
+        }  
+
 }
