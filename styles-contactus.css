@@ -65,11 +65,9 @@
   display: block;
 }
 
-<<<<<<< HEAD
 
-=======
 /*Customisation of background elements and cursor*/
->>>>>>> parent of d264420 (Nav bar appropriate pixels for Contact Us page)
+
 body{
   margin-top:1em;
   background: url(background.png) no-repeat;
@@ -79,32 +77,38 @@ body{
 ///*#cursor credited to https://codepen.io/cubeghost/pen/dPeQqR*///
 }
 
-
+/*Adjusting and styling the contact map to the center*/
 .contact-map {
   color: #48494B;
   text-align: center;
   font-size: 2em;
+  font-family: Helvetica, sans-serif;
+  font-weight: 200;
   text-transform: uppercase;
-  margin-top: 100px;
+  margin-top: 3em;
   margin-bottom: 2em;
   width: 100%;
   justify-content: center;
 }
 
+/*Positioning of Contact Form*/
 .contact-form{
   display:grid;
   justify-content: center;
 }
 
+/*Styling details of heading of contact form*/
 .contact-form h2{
   color: #48494B;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
   margin-bottom: 1.5em;
-  font-family: Georgia, sans-serif; 
+  font-family: Helvetica, sans-serif; 
+  font-weight: 200;
 }
 
+/*Styling of subtitles under heading*/
 .contact-form p{
   color: #48494B;
   width: calc(60%-10px);
@@ -114,6 +118,7 @@ body{
   font-family: Helvetica, sans-serif; 
 }
 
+/*Styling of all contact form textbox question elements*/
 .contact-form .text-box{
   display:inline-block;
   flex-direction:row;
