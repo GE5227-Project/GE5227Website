@@ -32,6 +32,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 100px; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+
 }
 
 /* Links inside the navbar */
@@ -50,13 +51,13 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 15px;  
+  font-size: 16px;  
   border: none;
   outline: none;
   color: white;
   padding: 12px 16px;
   background-color: inherit;
-  font-family: inherit;
+  font-family: Helvetica, sans-serif;
   margin: 0;
 }
 
