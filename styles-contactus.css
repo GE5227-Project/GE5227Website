@@ -65,7 +65,9 @@
   display: block;
 }
 
+
 /*Customisation of background elements and cursor*/
+
 body{
   margin-top:1em;
   background: url(background.png) no-repeat;
