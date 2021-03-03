@@ -65,7 +65,11 @@
   display: block;
 }
 
+<<<<<<< HEAD
 
+=======
+/*Customisation of background elements and cursor*/
+>>>>>>> parent of d264420 (Nav bar appropriate pixels for Contact Us page)
 body{
   margin-top:1em;
   background: url(background.png) no-repeat;

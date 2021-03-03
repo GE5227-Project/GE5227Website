@@ -65,7 +65,10 @@
   display: block;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of d264420 (Nav bar appropriate pixels for Contact Us page)
 /*formatting for fading imagery*/
 .hover01{
     margin-top: 12em;
@@ -120,6 +123,10 @@ body, html {
   font-family: Helvetica, monospace;
   /* Set the font-size to 25 pixels */
   font-size: 25px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> parent of d264420 (Nav bar appropriate pixels for Contact Us page)
 }
 
 /* Position text in the middle */
