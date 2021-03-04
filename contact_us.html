@@ -8,37 +8,49 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href ="reset.css">    
+    <!-- clean the default style of browser -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- link new outside style -->   
     <link rel="stylesheet" href="styles-contactus.css">
-
-    <!--navigation bar pegged on top--> 
-    <div class="navbar">
-    <a href="home.html">Home</a>
-    <a href="our_team.html">Our Team</a>
-    <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-            <a href="about_us.html#ShiYun">Ho Shi Yun</a>
-            <a href="about_us.html#Wenling">Lu Wenling</a>
-            <a href="about_us.html#Yujun">Hou Yujun</a>
-            <a href="about_us.html#Jeremias">Jeremias Liew</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Our Work</button>
-        <div class="dropdown-content">
-            <a href="our_work.html">Project 1</a>
-            <a href="our_work_inprogress.html">In Progress</a>
-        </div>
-    </div>
-    <a href="contact_us.html">Contact Us</a>
-        
-      </div>
+    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
     
   <body>
+      
+    <div class="banner">
+        <div class="banner-caption">
+            <span class="border">SOME TAG LINE</span>
+        </div>
+    </div>
     
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="our_team.html">Our Team</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
+                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
+                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
+                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="our_work.html#1">Project 1</a>
+                <a href="our_work_inprogress.html">In Progress</a>
+            </div>
+        </div>
+        <a href="contact_us.html">Contact Us</a>
+    </div>
+      
     <!--alert messages start-->
     <?php echo $alert; ?>
     <!--alert messages end-->
@@ -63,7 +75,6 @@
           <input type="submit" name="submit" class="send-btn" value="Send">
         </form>
       </div>
-    </div>
       
 
     <!--contact section ends-->
@@ -72,6 +83,18 @@
     if(window.history.replaceState){
       window.history.replaceState(null, null, window.location.href);
     }
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("navbar")[0].style.top = "80px";
+            } else {
+                document.getElementsByClassName("navbar")[0].style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
     </script>
     
     

@@ -2,42 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Work</title>
+    
     <link rel="stylesheet" href="styles-ourworkmain.css">
+    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="navbar">
-    <a href="home.html">Home</a>
-    <a href="our_team.html">Our Team</a>
-    <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-            <a href="about_us.html#ShiYun">Ho Shi Yun</a>
-            <a href="about_us.html#Wenling">Lu Wenling</a>
-            <a href="about_us.html#Yujun">Hou Yujun</a>
-            <a href="about_us.html#Jeremias">Jeremias Liew</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Our Work</button>
-        <div class="dropdown-content">
-            <a href="our_work.html">Project 1</a>
-            <a href="our_work_inprogress.html">In Progress</a>
-        </div>
-    </div>
-    <a href="contact_us.html">Contact Us</a>
-</div>
 </head>
 <body>
+    <div class="banner" style="background-image: none; background-color: black;">
+        <div class="banner-caption">
+            <span class="border">SOME TAG LINE</span>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="our_team.html">Our Team</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
+                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
+                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
+                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="our_work.html#1">Project 1</a>
+                <a href="our_work_inprogress.html">In Progress</a>
+            </div>
+        </div>
+        <a href="contact_us.html">Contact Us</a>
+    </div>
+    
     <section>
     <div class="hover01">
       <div>
           <figure><a href=#storymap><img src="ourworkmain.jpg"></a></figure>
-          <a><span style ="font-size:25px; font-weight: 500;">Web Development Project</span></a>
+          <span style ="font-size:25px; font-weight: 500;">Web Development Project</span>
       </div>
       <div>
-        <figure><a href="our_work_inprogress.html"><img src="ourworkmain2.jpg"></figure>
-          <a><span style ="font-size:25px; font-weight: 500;">Internet GIS Project</span></a>
+          <figure><a href="our_work_inprogress.html"><img src="ourworkmain2.jpg"></a></figure>
+          <span style ="font-size:25px; font-weight: 500;">Internet GIS Project</span>
       </div>
     </div>
     </section>
@@ -45,11 +57,22 @@
     <div id="storymap">
     <iframe src="https://storymaps.arcgis.com/stories/ac38c7f2d050488093a11c3f8d67b796?header" width="100%" height="1500px"  frameborder="0" allowfullscreen allow="geolocation"></iframe>
     </div>
-    
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("navbar")[0].style.top = "80px";
+            } else {
+                document.getElementsByClassName("navbar")[0].style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
+    <!-- src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"-->
+<!--
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -74,5 +97,5 @@ $(document).ready(function(){
     } // End if
   });
 });
-    </script>
+-->
 </html>
