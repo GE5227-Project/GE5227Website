@@ -1,78 +1,13 @@
-/* Navigation bar */
-.navbar {
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    left: 0;
-    z-index: 10;
-}
-
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: grey;
-  color:black;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: #f2f2f2;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
 /* Main content */
-body {
-    margin-top: 60px; /* Add a top margin to avoid content overlay */
-}
-
 h1 {
+    display: block;
+    font: 2em Helvetica;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
     text-align: center;
+    padding-top: 180px;
 }
 
 hr {
@@ -80,6 +15,7 @@ hr {
     margin-left: 25%;
     width: 50%;
 }
+
 
 .popup-img {
     float: left;
@@ -129,7 +65,7 @@ hr {
     padding:4px 6px 8px 6px;
     border-radius:25px;
     cursor:pointer;
-    z-index: 11;
+    z-index: 21;
 }
 
 /* This section needs to be relooked at, see if can reduce the amount of repeats */
@@ -205,25 +141,25 @@ hr {
 .popup-shiyun.fade {  /* is there a better way to do this apart from doing individually */
     opacity: 1;
     transition-duration: 1s;
-    z-index: 10;
+    z-index: 20;
 }
 
 .popup-wenling.fade {
     opacity: 1;
     transition-duration: 1s;
-    z-index: 10;
+    z-index: 20;
 }
 
 .popup-yujun.fade {
     opacity: 1;
     transition-duration: 1s;
-    z-index: 10;
+    z-index: 20;
 }
 
 .popup-jeremias.fade {
     opacity: 1;
     transition-duration: 1s;
-    z-index: 10;
+    z-index: 20;
 }
 
 /* This above section needs to be relooked at, see if can reduce the amount of repeats */
@@ -241,7 +177,7 @@ hr {
 .cover.fade {
     opacity: 0.9;
     transition-duration: 1s;
-    z-index: 5;
+    z-index: 15;
 }
 
 .cover.fadeout {

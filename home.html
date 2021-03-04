@@ -3,7 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title>Home</title>
-    <link rel="stylesheet" href="styles_home.css">
+    <!-- clean the default style of browser -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- link new outside style -->
+    <link rel="stylesheet" href="styles-home.css">
+    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
     
 <body>
@@ -18,19 +23,23 @@
         <a href="home.html">Home</a>
         <a href="our_team.html">Our Team</a>
         <div class="dropdown">
-            <button class="dropbtn">About Us</button>
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
-                <a href="about_us.html#ShiYun">Ho Shi Yun</a>
-                <a href="about_us.html#Wenling">Lu Wenling</a>
-                <a href="about_us.html#Yujun">Hou Yujun</a>
-                <a href="about_us.html#Jeremias">Jeremias Liew</a>
+                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
+                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
+                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
+                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Our Work</button>
+            <button class="dropbtn">Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
                 <a href="our_work.html#1">Project 1</a>
-                <a>In Progress</a>
+                <a href="our_work_inprogress.html">In Progress</a>
             </div>
         </div>
         <a href="contact_us.html">Contact Us</a>
@@ -49,7 +58,7 @@
         </div>
         <a href="home.html#Intro" title="Click to scroll down">
             <div class="scroll-invite">
-                <img src="arrow-down-white.png" alt="Downscroll arrow" width="130" height="52">
+                <img src="arrow-down-white-2.png" alt="Downscroll arrow" width="130" height="90">
             </div>
         </a>
     </div>
@@ -68,7 +77,8 @@
             A Website Made For GE5227, Year 2021
         </p>
     </div>
-    
+    <script src="script_home.js" defer></script>
+
 </body>
     
 </html>

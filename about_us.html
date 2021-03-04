@@ -7,47 +7,57 @@
     <link rel="stylesheet" href="reset.css">
     <!-- link new outside style -->
     <link rel="stylesheet" href="style-aboutus.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-navbar.css">
 	
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--add icon kit: https://www.w3schools.com/icons/fontawesome5_intro.asp -->
 	
-	
-<div class="navbar">
-    <a href="home.html">Home</a>
-    <a href="our_team.html">Our Team</a>
-    <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-            <a href="about_us.html#Ho Shi Yun">Ho Shi Yun</a>
-            <a href="about_us.html#Lyu Wenling">Lyu Wenling</a>
-            <a href="about_us.html#Hou Yujun">Hou Yujun</a>
-            <a href="about_us.html#Liew Jeremias">Jeremias Liew</a>
-        </div>
-    </div>
-    <div class="dropdown">
-        <button class="dropbtn">Our Work</button>
-        <div class="dropdown-content">
-            <a href="our_work.html#1">Project 1</a>
-            <a>In Progress</a>
-        </div>
-    </div>
-    <a href="contact_us.html">Contact Us</a>
-</div>
 </head>
+    
 <body>
+    
+    <div class="banner" style="background-image: none; background-color: black;">
+        <div class="banner-caption">
+            <span class="border">SOME TAG LINE</span>
+        </div>
+    </div>
  
-
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="our_team.html">Our Team</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
+                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
+                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
+                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="our_work.html#1">Project 1</a>
+                <a href="our_work_inprogress.html">In Progress</a>
+            </div>
+        </div>
+        <a href="contact_us.html">Contact Us</a>
+    </div>
     
 <!-- shiyun -->
-<div Id="Ho Shi Yun">
+<div id="HO_Shi_Yun">
 <!-- create the header div -->
-<div class="header">
+<div class="header" style="padding: 300px 0 100px 0">
 
 <!-- create name -->
 <div class="name w">
     <a herf="#">
-        <h1>Ho Shi Yun</h1>
+        <h1>HO Shi Yun</h1>
         <h2>Educator | GIS Practioner | Data Scientist</h2>
     </a>
 </div>
@@ -108,14 +118,14 @@
     
     
 <!-- wenling --> 
-<div Id="Lyu Wenling">
+<div id="LYU_Wenling">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
     <a herf="#">
-        <h1>Lyu Wenling</h1>
+        <h1>LYU Wenling</h1>
         <h2>GIS Practioner | Photography enthusiast </h2>
     </a>
 </div>
@@ -176,14 +186,14 @@
 </div>
 	
 <!-- yujun -->    
-<div id="Hou Yujun">
+<div id="HOU_Yujun">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
     <a herf="#">
-        <h1>Hou Yujun</h1>
+        <h1>HOU Yujun</h1>
         <h2>Educator | GIS Practioner | Data Scientist</h2>
     </a>
 </div>
@@ -243,14 +253,14 @@
 </div>
     
 <!-- jeremias --> 
-<div id="Liew Jeremias">
+<div id="Jeremias_LIEW">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
     <a herf="#">
-        <h1>Liew Jeremias</h1>
+        <h1>Jeremias LIEW</h1>
         <h2>Educator | GIS Practioner | Data Scientist</h2>
     </a>
 </div>
@@ -309,6 +319,18 @@
     </ul>
 </div>
 
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("navbar")[0].style.top = "80px";
+            } else {
+                document.getElementsByClassName("navbar")[0].style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
