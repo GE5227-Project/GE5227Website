@@ -7,134 +7,119 @@
     <link rel="stylesheet" href="reset.css">
     <!-- link new outside style -->
     <link rel="stylesheet" href="style-aboutus.css">
-    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="styles.css">
 	
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--add icon kit: https://www.w3schools.com/icons/fontawesome5_intro.asp -->
 	
+<div class="navbar"> <!-- add navigation bar -->
+    <a href="home.html">Home</a>
+    <a href="our_team.html">Our Team</a>
+    <div class="dropdown">
+        <button class="dropbtn">About Us</button>
+        <div class="dropdown-content">
+            <a href="about_us.html#Ho Shi Yun">Ho Shi Yun</a>
+            <a href="about_us.html#Lyu Wenling">Lyu Wenling</a>
+            <a href="about_us.html#Hou Yujun">Hou Yujun</a>
+            <a href="about_us.html#Liew Jeremias">Jeremias Liew</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Our Work</button>
+        <div class="dropdown-content">
+            <a href="our_work.html#1">Project 1</a>
+            <a>In Progress</a>
+        </div>
+    </div>
+    <a href="contact_us.html">Contact Us</a>
+</div>
 </head>
-    
 <body>
     
-    <div class="banner" style="background-image: none; background-color: black;">
-        <div class="banner-caption">
-            <span class="border">SOME TAG LINE</span>
-        </div>
-    </div>
- 
-    <div class="navbar">
-        <a href="home.html">Home</a>
-        <a href="our_team.html">Our Team</a>
-        <div class="dropdown">
-            <button class="dropbtn">About Us
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
-                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
-                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
-                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Our Work
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="our_work.html#1">Project 1</a>
-                <a href="our_work_inprogress.html">In Progress</a>
-            </div>
-        </div>
-        <a href="contact_us.html">Contact Us</a>
-    </div>
-    
 <!-- shiyun -->
-<div id="HO_Shi_Yun">
-<!-- create the header div -->
-<div class="header" style="padding: 300px 0 100px 0">
-
-<!-- create name -->
-<div class="name w">
-    <a herf="#">
-        <h1>HO Shi Yun</h1>
+<div Id="Ho Shi Yun"> <!--create the id to link this location to the navbar name button-->
+<div class="header"> <!-- create the header div  -->
+<div class="name w"> <!-- create name and link the "w" style in css -->
+     <!-- add the header content  -->
+        <h1>Ho Shi Yun</h1>
         <h2>Educator | GIS Practioner | Data Scientist</h2>
-    </a>
 </div>
-    
 </div>
-<!-- introducation part -->
+	
+<!-- create an introducation part -->
 <div class="intro w "> 
     <h1> Introduction </h1>
-    <p1> Something introduce yourself</p1>
-
-    
-</div>    
+    <p1> 
+		Ho Shi Yun is a professional geography educator for several years, and she is a postgraduate in Applied Geographical Information System (GIS) at the National University of Singapore (NUS). Prior to pursuing her postgraduate studies, she has done undergraduate studies at National Institute of Education with a major in Geography and a minor in English Linguistics. Her interests include critical GIS, biopolitics, and migrant-related issues. Her thesis will be focusing on the spaces of negotiations carved by Chinese migrant workers in Singapore.  <br><br>
+		Aside from her proclivity towards hotpot and all things spicy, she is a big fan of musical theatre (both Broadway and West End) and the crosstalk comedian troupe Deyunshe. She was once involved in musical productions in college and now wishes to be able to snatch a ticket at the elusive crosstalk show put up by Deyunshe. Her limited experience with web development started off from her childhood obsession with modifying blog layouts to be pink and sparkly in her formation years.</p1>  
+</div>   
+	
 <!-- create the content div -->
 <div class="content w clearfix"> 
 <!--clearfix is to fix the float problem css files should add some sy meanwhile -->
     <h1> Snippets of My Life</h1>
-    <div class="t1">
-        <h2>title 1</h2>
-        <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img1">
+    <div class="t1"> <!-- create a div for title 1-->
+        <h2>DEYUNSHE(德云社)</h2>
+        <div class="imgDiv"> <!-- add a img div-->
+            <a href="https://www.youtube.com/watch?v=UjLPBIU_31w" target="_blank"> <!-- add a link to this img-->
+                <img src="sy1.jpg" alt="img1">
             </a>    
         </div>
 
     </div>
-    <div class="t2">
-        <h2>title 2</h2>
+    <div class="t2"> <!--create the title2 -->
+        <h2>The Opera </h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img2">
+            <a href="https://www.youtube.com/watch?v=EGb4hj-EXt0" target="_blank">
+                <img src="sy2.jpg" alt="img2">
             </a>
         </div>
     </div>
 
-    <div class="t3">
-        <h2>title 3</h2>
+    <div class="t3"> <!--create the title3 -->
+        <h2>Arts</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img3">
+            <a href="https://www.nationalgallery.sg/" target="_blank">
+                <img src="sy3.jpg" alt="img3">
             </a>
         </div>
 
     </div>
-<div class="map w">
+<div class="map w"> <!--create a map view in webpage -->
     <h1> Web Mapping</h1>
-    <iframe name="webmap" src="https://msc2020.maps.arcgis.com/apps/View/index.html?appid=0fad1c9a77874b05a4b0e4753dafee71";
+    <iframe name="webmap" src="https://msc2020.maps.arcgis.com/apps/webappviewer/index.html?id=047f4fa408104bd79b317b64ab767046";
     width="940px" height="500px" scrolling=no frameborder="0"></iframe>
 </div>
 </div>
 
     <ul class="icons w">
-        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-        <li><a href="#"><span class="fab fa-github"></span></a></li>
+        <li><a href="https://about.fb.com/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+        <li><a href="https://twitter.com/?lang=zh-cn" target="_blank"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        <li><a href="https://github.com/shiyun-ho" target="_blank"><span class="fab fa-github"></span></a></li>
     </ul>
 </div>
     
     
 <!-- wenling --> 
-<div id="LYU_Wenling">
+<div Id="Lyu Wenling">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
-    <a herf="#">
-        <h1>LYU Wenling</h1>
+        <h1>Lyu Wenling</h1>
         <h2>GIS Practioner | Photography enthusiast </h2>
-    </a>
 </div>
     
 </div>
 <!-- introducation part -->
 <div class="intro w "> 
     <h1> Introduction </h1>
-    <p1> Hi, Here is Wenling, who come from Jiangsu, China. After graduating from Beijing Forestry University, I worked as a urban planner for one year. During this period, I participated in some projects related to smart city and webgis. Now, I am a beginner coder who is interested in ui design and web-design. </p1>
+    <p1> 
+		Lyu Wenling graduated from Beijing Forestry University with a major in Urban Planning. Having cumulated some experience as an urban planner shortly after her graduation, Wenling was actively involved in a multitude of projects related to Smart City and Web GIS. She is now currently pursuing postgraduate studies in Applied Geographical Information System (GIS) at National University of Singapore.  <br><br>
+		Born in Jiangsu, China, Wenling has a penchant for seeking for the hippest food joints and a weakness for all things Cantonese. She’s slowing acquiring a tongue for spicy food after arriving in Singapore and hopes to be able to seek out more delicacies in this sunny island.  <br><br>
+		While she believes that she’s still young in her journey in developing as a coder, she believes that her experience in this project has unveiled her inclinations towards UI/UX web design and she looks forward to learning more.  </p1>
 
     
 </div>    
@@ -145,7 +130,7 @@
     <div class="t1">
         <h2>Photography</h2>
         <div class="imgDiv">
-            <a href="https://www.eyeem.com/u/linger781">
+            <a href="https://www.eyeem.com/u/linger781" target="_blank">
                 <img src=" lwl1.jpg" alt="EYEEM" />  
         
             </a>    
@@ -155,7 +140,7 @@
     <div class="t2">
         <h2>Kpop</h2>
         <div class="imgDiv">
-            <a href="https://weibo.com/kpopmbcsbs?is_all=1">
+            <a href="https://weibo.com/kpopmbcsbs?is_all=1" target="_blank">
                 <img src="lwl2.jpg" alt="KPOP">
             </a>
         </div>
@@ -164,7 +149,7 @@
     <div class="t3">
         <h2>TED</h2>
         <div class="imgDiv">
-            <a href="https://www.ted.com/?utm_source=youtube&utm_medium=social&utm_campaign=youtube&utm_content=banner-link">
+            <a href="https://www.ted.com/?utm_source=youtube&utm_medium=social&utm_campaign=youtube&utm_content=banner-link" target="_blank">
                 <img src="lwl3.jpg" alt="TED">
             </a>
         </div>
@@ -178,60 +163,59 @@
 </div>
 
     <ul class="icons w">
-        <li><a href="https://about.fb.com/"><span class="fab fa-facebook-f"></span></a></li>
-        <li><a href="https://twitter.com/?lang=zh-cn"><span class="fab fa-twitter"></span></a></li>
-        <li><a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a></li>
-        <li><a href="https://github.com/linger-lwl"><span class="fab fa-github"></span></a></li>
+        <li><a href="https://about.fb.com/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+        <li><a href="https://twitter.com/?lang=zh-cn" target="_blank"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        <li><a href="https://github.com/linger-lwl" target="_blank"><span class="fab fa-github"></span></a></li>
     </ul>
 </div>
 	
 <!-- yujun -->    
-<div id="HOU_Yujun">
+<div id="Hou Yujun">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
-    <a herf="#">
-        <h1>HOU Yujun</h1>
+        <h1>Hou Yujun</h1>
         <h2>Educator | GIS Practioner | Data Scientist</h2>
-    </a>
 </div>
     
 </div>
 <!-- introducation part -->
 <div class="intro w "> 
     <h1> Introduction </h1>
-    <p1> Something introduce yourself</p1>
-
-    
+    <p1> 
+		Hou Yujun obtained her undergraduate degree with a major in Environmental Studies and a minor in GIS from NUS in 2020, and is currently pursuing a master's degree in Applied GIS at NUS. Her interest lies in urban sustainability and planning and is keen on exploring different technologies to study urban patterns and sustainability-related issues.  <br><br>
+		She is a great fan of hiking, playing the harmonica, and growing plants whenever there’s pockets of free time in her schedule. She, too, likes to consider herself to have an inclination for cooking – or for some staunch cooking aficionados – to be capable of creating somewhat edible sustenance for herself in her free time. Despite being born and raised in a hometown of light (yet tasty) cuisine, Yujun’s trip to Chongqing, China, has proved to be a pivotal point in her life. She has since then developed a taste for fiery food and now demands for more Sambal chilli paste along with her Nasi Lemak at the Nasi Padang Stall.  <br><br>
+		Before coming to the world of Internet GIS, Yujun has explored different programming languages including Python, R and Java.</p1>
 </div>    
 <!-- create the content div -->
 <div class="content w clearfix"> 
 <!--clearfix is to fix the float problem css files should add some sy meanwhile -->
     <h1> Snippets of My Life</h1>
     <div class="t1">
-        <h2>title 1</h2>
+        <h2>Penguin</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img1">
+            <a href="https://www.youtube.com/channel/UCEg0YEvkMvtu3OuQRAsMhVg" target="_blank">
+                <img src="yj1.jpg" alt="img1">
             </a>    
         </div>
 
     </div>
     <div class="t2">
-        <h2>title 2</h2>
+        <h2>Foodie</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img2">
+            <a href="https://www.youtube.com/watch?v=nlgbLKYpX-w&list=PLZSc59YSeN72DhSGIbUpLbyMJXFQ0V5pY" target="_blank">
+                <img src="yj2.jpg" alt="img2">
             </a>
         </div>
     </div>
 
     <div class="t3">
-        <h2>title 3</h2>
+        <h2>Harmonica</h2>
         <div class="imgDiv">
-            <a href="">
+            <a href="https://www.youtube.com/channel/UCEg0YEvkMvtu3OuQRAsMhVg" target="_blank">
                 <img src="img/bg.png" alt="img3">
             </a>
         </div>
@@ -239,37 +223,38 @@
     </div>
 <div class="map w">
     <h1> Web Mapping</h1>
-    <iframe name="webmap" src="https://msc2020.maps.arcgis.com/apps/View/index.html?appid=0fad1c9a77874b05a4b0e4753dafee71";
+    <iframe name="webmap" src="https://msc2020.maps.arcgis.com/apps/instant/minimalist/index.html?appid=85d9b5d4803446cba40b91b5913bfda5";
     width="940px" height="500px" scrolling=no frameborder="0"></iframe>
 </div>   
 </div>
 
     <ul class="icons w">
-        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-        <li><a href="#"><span class="fab fa-github"></span></a></li>
+        <li><a href="https://about.fb.com/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+        <li><a href="https://twitter.com/?lang=zh-cn" target="_blank"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        <li><a href="https://github.com/Junguin" target="_blank"><span class="fab fa-github"></span></a></li>
     </ul>
 </div>
     
 <!-- jeremias --> 
-<div id="Jeremias_LIEW">
+<div id="Liew Jeremias">
 <!-- create the header div -->
 <div class="header">
 
 <!-- create name -->
 <div class="name w">
-    <a herf="#">
-        <h1>Jeremias LIEW</h1>
-        <h2>Educator | GIS Practioner | Data Scientist</h2>
-    </a>
+        <h1>Liew Jeremias</h1>
+        <h2>Coding Enthusiast | Classical Musician | Gamer</h2>
 </div>
     
 </div>
 <!-- introducation part -->
 <div class="intro w "> 
     <h1> Introduction </h1>
-    <p1> Something introduce yourself</p1>
+    <p1>
+		Jeremias Liew is currently a postgraduate student in Applied Geographical Systems (GIS) at the National University of Singapore (NUS). Prior to his masters, Jeremias completed his undergraduate degree with a major in Environmental Studies and minor in GIS. His academic interests include urban climates, climate change, and remote sensing. <br><br
+		>Adding on to his impressive multi-disciplinary background is his active involvement in the music scene. Trained with a background in classical music, Jeremias has been part of several symphony orchestras in Singapore and has performed overseas as part of music festivals. Aside from his disposition towards classial music, Jeremias enjoys listening to a wide myriad of music genres and languages, from Shostakovich's 5th Symphony to the likes of Lee Ronghao and even Metallica. Jeremias has some experience in Python scripting and Java software engineering, and enjoys doing coding challenges on online judge websites during his free time.<br><br>
+		He is the residential helpdesk on all things related to GitHub for other group members in this group. </p1>
 
     
 </div>    
@@ -278,59 +263,47 @@
 <!--clearfix is to fix the float problem css files should add some sy meanwhile -->
     <h1> Snippets of My Life</h1>
     <div class="t1">
-        <h2>title 1</h2>
+        <h2>Classical Music</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img1">
+            <a href="https://www.youtube.com/watch?v=yF_vFyRLImI&ab_channel=Musicians%27Initiative">
+                <img src="j1.jpg" alt="img1">
             </a>    
         </div>
 
     </div>
     <div class="t2">
-        <h2>title 2</h2>
+        <h2>Variety Shows</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img2">
+            <a href="https://weibo.com/u/5862147128">
+                <img src="j2.jpg" alt="img2">
             </a>
         </div>
     </div>
 
     <div class="t3">
-        <h2>title 3</h2>
+        <h2>Computer Games</h2>
         <div class="imgDiv">
-            <a href="">
-                <img src="img/bg.png" alt="img3">
+            <a href="https://matchhistory.sg.leagueoflegends.com/en/#match-history/sg/61393482">
+                <img src="j3.jpg" alt="img3">
             </a>
         </div>
 
     </div>
 <div class="map w">
     <h1> Web Mapping</h1>
-    <iframe name="webmap" src="https://msc2020.maps.arcgis.com/apps/View/index.html?appid=0fad1c9a77874b05a4b0e4753dafee71";
+    <iframe name="webmap" src="https://storymaps.arcgis.com/stories/a75d2ebfcec140a7be6b342dfe33d350";
     width="940px" height="500px" scrolling=no frameborder="0"></iframe>
 </div>  
 </div>
 
     <ul class="icons w">
-        <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-        <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-        <li><a href="#"><span class="fab fa-github"></span></a></li>
+        <li><a href="https://about.fb.com/" target="_blank"><span class="fab fa-facebook-f"></span></a></li>
+        <li><a href="https://twitter.com/?lang=zh-cn" target="_blank"><span class="fab fa-twitter"></span></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a></li>
+        <li><a href="https://github.com/JeremiasLiew" target="_blank"><span class="fab fa-github"></span></a></li>
     </ul>
 </div>
 
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementsByClassName("navbar")[0].style.top = "80px";
-            } else {
-                document.getElementsByClassName("navbar")[0].style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
 </body>
 
 </html>
