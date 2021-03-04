@@ -20,13 +20,12 @@ body{
 }
 
 .hover01 figure img {
-    /*border-radius: 100%;*/
-    clip-path: circle(50%);
+    border-radius: 50%;
 }
 
 .hover01 figure:hover img {
     /*filter:blur(2px);*/
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
@@ -37,4 +36,28 @@ body{
         width:100%
         }  
 
+}
+
+.view-larger-map {
+    display: block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 24px;
+    background-color: black;
+    text-align: center;
+}
+
+.view-larger-map a {
+    color: gainsboro;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font: 14px Helvetica;
+    position: relative;
+    top: 2.5px;
+}
+
+.view-larger-map a:hover {
+  color: gold;
 }

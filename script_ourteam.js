@@ -15,22 +15,22 @@ var popupOpen = false;
 
 overlayShiyun.addEventListener('click', () => {
     storeActivePerson(popupShiyun);
-    storeActiveUrl('about_us.html#Ho Shi Yun');
+    storeActiveUrl('about_us.html#HO_Shi_Yun');
     openPopup();  
 });
 overlayWenling.addEventListener('click', () => {
     storeActivePerson(popupWenling);
-    storeActiveUrl('about_us.html#Lyu Wenling');
+    storeActiveUrl('about_us.html#LYU_Wenling');
     openPopup();
 });
 overlayYujun.addEventListener('click', () => {
     storeActivePerson(popupYujun);
-    storeActiveUrl('about_us.html#Hou Yujun');
+    storeActiveUrl('about_us.html#HOU_Yujun');
     openPopup();
 });
 overlayJeremias.addEventListener('click', () => {
     storeActivePerson(popupJeremias);
-    storeActiveUrl('about_us.html#Liew Jeremias');
+    storeActiveUrl('about_us.html#Jeremias_LIEW');
     openPopup();
 });
 

@@ -1,17 +1,18 @@
 /* Main content */
 h1 {
     display: block;
-    font: 2em Helvetica;
+    font: bold 40px Helvetica;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
     text-align: center;
-    padding-top: 180px;
+    padding-top: 200px;
+    color: #000;
 }
 
-hr {
-    border: 1px solid grey;
+.hr {
+    border: 1px solid #000;
     margin-left: 25%;
     width: 50%;
 }
@@ -20,122 +21,195 @@ hr {
 .popup-img {
     float: left;
     position: relative;
-    left: 0;
-    top: 0;
-    width: 400px;
-    height: 600px;
+    margin: 5%;
+    width: 40%;
+    height: auto;
+}
+
+.popup-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 .text-box {
-    float: left;
+    float: right;
     position: relative;
-    left: 0;
-    top: 0;
-    width: 600px;
-    height: 600px;
-    background-color: white;
+    right: 5%;
+    top: 8%;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    justify-content: center;
 }
 
 .text-box p {
     color: black;
     opacity: 1;
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    font: 400 15px/1.5 Helvetica;
+    text-align: justify;
 }
 
-.text-box h1 {
-    top: 50%;
-    left: 50%;
+.text-box h2 {
+    top: 0;
+    right: 0;
+    font: bold 28px Georgia;
+    margin: 0.6em 0;
 }
 
 .close {
-    color:#fff;
-    font-weight:bold;
-    background-color:#454545;
-    width:12px;
-    height:12px;
-    position:absolute;
-    top:-12px;
-    left:-12px;
-    padding:4px 6px 8px 6px;
-    border-radius:25px;
+    background-color: transparent;
+    width:15px;
+    height:15px;
+    position:relative;
+    float: right;
     cursor:pointer;
     z-index: 21;
 }
 
 /* This section needs to be relooked at, see if can reduce the amount of repeats */
-
 .popup-shiyun {
     position: fixed;
-    width: 1000px;
-    height: 600px;
-    left: 23%;
+    width: 40%;
+    height: 45%;
+    left: 30%;
+    top: 20%;
     opacity: 0;
-    border-style: solid;
-    border-width: 15px;
-    border-color: lightgray;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #333;
+    background-color: whitesmoke;
+    padding: 7px;
+    box-shadow: 8px 8px 14px black;
 }
 
 .popup-wenling {
     position: fixed;
-    width: 1000px;
-    height: 600px;
-    left: 23%;
+    width: 40%;
+    height: 45%;
+    left: 30%;
+    top: 20%;
     opacity: 0;
-    border-style: solid;
-    border-width: 15px;
-    border-color: lightgray;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #333;
+    background-color: whitesmoke;
+    padding: 7px;
+    box-shadow: 8px 8px 14px black;
 }
 
 .popup-yujun {
     position: fixed;
-    width: 1000px;
-    height: 600px;
-    left: 23%;
+    width: 40%;
+    height: 45%;
+    left: 30%;
+    top: 20%;
     opacity: 0;
-    border-style: solid;
-    border-width: 15px;
-    border-color: lightgray;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #333;
+    background-color: whitesmoke;
+    padding: 7px;
+    box-shadow: 8px 8px 14px black;
 }
 
 .popup-jeremias {
     position: fixed;
-    width: 1000px;
-    height: 600px;
-    left: 23%;
+    width: 40%;
+    height: 45%;
+    left: 30%;
+    top: 20%;
     opacity: 0;
-    border-style: solid;
-    border-width: 15px;
-    border-color: lightgray;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #333;
+    background-color: whitesmoke;
+    padding: 7px;
+    box-shadow: 8px 8px 14px black;
 }
 
 .popup-shiyun button {
     position: absolute;
-    left: 450px;
-    top: 550px;
+    right: 16.5%;
+    bottom: 7.5%;
+    background-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    color: whitesmoke;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font: 400 13px Helvetica;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.popup-shiyun button:hover {
+    cursor: pointer;
 }
 
 .popup-wenling button {
     position: absolute;
-    left: 450px;
-    top: 550px;
+    right: 16.5%;
+    bottom: 7.5%;
+    background-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    color: whitesmoke;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font: 400 13px Helvetica;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.popup-wenling button:hover {
+    cursor: pointer;
 }
 
 .popup-yujun button {
     position: absolute;
-    left: 450px;
-    top: 550px;
+    right: 16.5%;
+    bottom: 7.5%;
+    background-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    color: whitesmoke;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font: 400 13px Helvetica;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.popup-yujun button:hover {
+    cursor: pointer;
 }
 
 .popup-jeremias button {
     position: absolute;
-    left: 450px;
-    top: 550px;
+    right: 16.5%;
+    bottom: 7.5%;
+    background-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    color: whitesmoke;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font: 400 13px Helvetica;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.popup-jeremias button:hover {
+    cursor: pointer;
 }
 
 .popup-shiyun.fade {  /* is there a better way to do this apart from doing individually */
@@ -162,6 +236,206 @@ hr {
     z-index: 20;
 }
 
+@media only screen and (max-width:1390px) {
+    .text-box p {
+        color: black;
+        opacity: 1;
+        font: 400 13px/1.5 Helvetica;
+        text-align: justify;
+    }
+
+    .text-box h2 {
+        top: 0;
+        right: 0;
+        font: bold 18px Georgia;
+        margin: 0.6em 0;
+    }
+}
+
+@media only screen and (max-width:880px) {
+    .text-box p {
+        color: black;
+        opacity: 1;
+        font: 400 11.5px/1.5 Helvetica;
+        text-align: justify;
+    }
+
+    .text-box h2 {
+        top: 0;
+        right: 0;
+        font: bold 18px Georgia;
+        margin: 0.6em 0;
+    }
+}
+
+@media only screen and (max-width:675px) {
+    .text-box {
+        float: right;
+        position: relative;
+        right: 10%;
+        top: 0;
+        width: 80%;
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .text-box p {
+        color: black;
+        opacity: 1;
+        font: 400 10px/1.5 Helvetica;
+        text-align: justify;
+    }
+
+    .text-box h2 {
+        top: 0;
+        right: 0;
+        font: bold 18px Georgia;
+        margin: 0.6em 0;
+    }
+    
+    .popup-img {
+        float: left;
+        position: relative;
+        margin: 5% 30%;
+        width: 40%;
+        height: auto;
+    }
+    
+    .popup-shiyun button {
+        position: absolute;
+        width: 50%;
+        right: 25%;
+        bottom: 7.5%;
+        background-color: #333;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #333;
+        color: whitesmoke;
+        padding: 4px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font: 400 13px Helvetica;
+        box-shadow: 2px 2px 5px #333;
+    }
+
+    .popup-wenling button {
+        position: absolute;
+        width: 50%;
+        right: 25%;
+        bottom: 7.5%;
+        background-color: #333;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #333;
+        color: whitesmoke;
+        padding: 4px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font: 400 13px Helvetica;
+        box-shadow: 2px 2px 5px #333;
+    }
+
+    .popup-yujun button {
+        position: absolute;
+        width: 50%;
+        right: 25%;
+        bottom: 7.5%;
+        background-color: #333;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #333;
+        color: whitesmoke;
+        padding: 4px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font: 400 13px Helvetica;
+        box-shadow: 2px 2px 5px #333;
+    }
+
+    .popup-jeremias button {
+        position: absolute;
+        width: 50%;
+        right: 25%;
+        bottom: 7.5%;
+        background-color: #333;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #333;
+        color: whitesmoke;
+        padding: 4px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font: 400 13px Helvetica;
+        box-shadow: 2px 2px 5px #333;
+    }
+
+}
+
+@media only screen and (max-height:690px) {
+    .popup-shiyun {
+        position: fixed;
+        width: 40%;
+        height: 328.68px;
+        left: 30%;
+        top: 20%;
+        opacity: 0;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #333;
+        background-color: whitesmoke;
+        padding: 7px;
+        box-shadow: 8px 8px 14px black;
+    }
+    .popup-wenling {
+        position: fixed;
+        width: 40%;
+        height: 328.68px;
+        left: 30%;
+        top: 20%;
+        opacity: 0;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #333;
+        background-color: whitesmoke;
+        padding: 7px;
+        box-shadow: 8px 8px 14px black;
+    }
+    .popup-yujun {
+        position: fixed;
+        width: 40%;
+        height: 328.68px;
+        left: 30%;
+        top: 20%;
+        opacity: 0;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #333;
+        background-color: whitesmoke;
+        padding: 7px;
+        box-shadow: 8px 8px 14px black;
+    }
+    .popup-jeremias {
+        position: fixed;
+        width: 40%;
+        height: 328.68px;
+        left: 30%;
+        top: 20%;
+        opacity: 0;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: #333;
+        background-color: whitesmoke;
+        padding: 7px;
+        box-shadow: 8px 8px 14px black;
+    }
+}
+
+
 /* This above section needs to be relooked at, see if can reduce the amount of repeats */
 
 .cover {
@@ -175,7 +449,7 @@ hr {
 }
 
 .cover.fade {
-    opacity: 0.9;
+    opacity: 0.5;
     transition-duration: 1s;
     z-index: 15;
 }
@@ -186,56 +460,86 @@ hr {
     z-index: 0;
 }
 
-.mugshots {
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1100px;
-    height: 1200px;
+.mugshots1 {
+    margin: 3% auto 3% auto;
     z-index: 1;
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+
+.mugshots2 {
+    margin: 3% auto 3% auto;
+    z-index: 1;
+    height: 250px;
+    width: 50%;
+    float: left;
+    text-align: center;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: 1s ease;
     z-index: 2;
-}
-
-.img-box {
     position: relative;
-    float:left;
-    width: 500px;
-    height: 500px;
-    margin-bottom:100px;
+    top: -101%;
 }
 
-.img-box img {
+.overlay .overlay-shiyun img {
     width: 100%;
     height: auto;
 }
 
-.img-box:hover > .overlay {
+.overlay .overlay-wenling img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay .overlay-yujun img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay .overlay-jeremias img {
+    width: 100%;
+    height: auto;
+}
+
+.img-box1 {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+    position: relative;
+    right: 0;
+}
+
+.img-box1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.img-box1:hover > .overlay {
     opacity: 1;
     cursor: pointer;  
 }
 
 .img-box2 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
     position: relative;
-    float:left;
-    width: 500px;
-    height: 500px;
+    left: 0;
 }
 
 .img-box2 img {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 .img-box2:hover > .overlay {
@@ -243,12 +547,13 @@ hr {
     cursor: pointer;  
 }
 
+
 .text {
-    color: white;
+    color: whitesmoke;
+    font: bold 36px Georgia;
     text-shadow: 2px 2px 8px black;
     white-space: nowrap;
     opacity: 1;
-    font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50%;

@@ -96,6 +96,12 @@ body {
     }
 }
 
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
 .main-text {
     padding: 150px 15% 50px 15%;
     text-align: center;
