@@ -118,6 +118,7 @@ body {
     border-bottom: 2px solid gold;
 }
 
+/* Displays either "Light Mode" or "Dark Mode" depending on current mode */
 .switch-text {
     float: right;
     display: block;
@@ -143,6 +144,7 @@ body {
     visibility: hidden;
 }
 
+/* Setting the visibility of text depending on dark/light mode */
 .switch-text.dark-mode {
     visibility: hidden;
 }
@@ -151,6 +153,8 @@ body {
     visibility: visible;
 }
 
+
+/* For the dark mode toggle switch */
 .switch {
     position: relative;
     display: inline-block;

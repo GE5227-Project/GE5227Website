@@ -66,24 +66,17 @@ body{
 /* CSS for dark mode toggle */
 
 /* using webkit as a pseudo element to change the colours of the scrollbar in dark mode */
-/* width */
 .dark-mode ::-webkit-scrollbar {
-  width: auto;
+    width: auto;
 }
-
-/* Track */
 .dark-mode ::-webkit-scrollbar-track {
-  background: #222222; 
+    background: #222222; 
 }
- 
-/* Handle */
 .dark-mode ::-webkit-scrollbar-thumb {
-  background: #555555; 
+    background: #555555; 
 }
-
-/* Handle on hover */
 .dark-mode ::-webkit-scrollbar-thumb:hover {
-  background: #444444; 
+    background: #444444; 
 }
 
 .dark-mode {

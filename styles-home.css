@@ -8,27 +8,6 @@ html {
 
 }
 
-/* using webkit as a pseudo element to change the colours of the scrollbar in dark mode */
-/* width */
-.dark-mode ::-webkit-scrollbar {
-  width: auto;
-}
-
-/* Track */
-.dark-mode ::-webkit-scrollbar-track {
-  background: #222222; 
-}
- 
-/* Handle */
-.dark-mode ::-webkit-scrollbar-thumb {
-  background: #555555; 
-}
-
-/* Handle on hover */
-.dark-mode ::-webkit-scrollbar-thumb:hover {
-  background: #444444; 
-}
-
 body {
     height: 100%; /* make the background image fit the whole screen */
     width: 100%;
@@ -155,6 +134,23 @@ body {
     text-align: center;
     color: #777;
     font-size: 14px;
+}
+
+
+/* CSS for dark mode toggle */
+
+/* using webkit as a pseudo element to change the colours of the scrollbar in dark mode */
+.dark-mode ::-webkit-scrollbar {
+    width: auto;
+}
+.dark-mode ::-webkit-scrollbar-track {
+    background: #222222; 
+}
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: #555555; 
+}
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #444444; 
 }
 
 .dark-mode {
