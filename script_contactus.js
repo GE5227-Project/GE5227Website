@@ -11,7 +11,7 @@ window.onscroll = function() {
 }
 
 // for toggling dark mode
-var darkMode = document.querySelectorAll('html, body, .navbar, .dropdown-content, .switch-text, .overlay-text, .contact-form, h2');
+var darkMode = document.querySelectorAll('html, body, .navbar, .dropdown-content, .switch-text, .overlay-text, .contact-form, h2, h3');
 
 var darkToggle = document.querySelector("label input");
 darkToggle.addEventListener("click", myFunction);

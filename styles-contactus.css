@@ -26,7 +26,7 @@ body{
 }
 
 /*Styling details of heading of contact form*/
-.contact-form h2{
+h3 {
     color: #48494B;
     text-align: center;
     font-size: 2em;
@@ -35,6 +35,8 @@ body{
     font-family: Helvetica, sans-serif; 
     font-weight: 200;
 }
+
+
 
 /*Styling of subtitles under heading*/
 .contact-form p{
@@ -169,7 +171,7 @@ body.dark-mode {
     max-width: 100%;
 }
 
-h2.dark-mode {
+h2.dark-mode, h3.dark-mode {
     color:white;
 }
 
