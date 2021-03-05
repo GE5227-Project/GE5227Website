@@ -108,6 +108,7 @@ body {
   display: block;
 }
 
+/* Dark mode */
 .navbar.dark-mode{
     border-bottom: 2px solid gold;
 }

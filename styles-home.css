@@ -18,6 +18,7 @@ body {
     color: #777;
 }
 
+/* Baground image and parrallax scrolling */
 .bgimg {
     /* Background image */
     background-image: url("home-image.png");
@@ -71,6 +72,7 @@ body {
     letter-spacing: 10px;
 }
 
+/* Scroll invite and animation */
 .scroll-invite {
     position: absolute;
     bottom: 0;
@@ -97,12 +99,14 @@ body {
     }
 }
 
+/* Disable parallax scrolling for non-computer devices */
 @media only screen and (max-device-width: 1366px) {
     .parallax {
         background-attachment: scroll;
     }
 }
 
+/* Main text section for introduction */
 .main-text {
     padding: 150px 15% 50px 15%;
     text-align: center;
