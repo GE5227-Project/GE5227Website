@@ -19,12 +19,13 @@ body{
 
 }
 
+/*makes the picture circular*/
 .hover01 figure img {
     border-radius: 50%;
 }
 
+/*effect upon hovering*/
 .hover01 figure:hover img {
-    /*filter:blur(2px);*/
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -59,7 +60,7 @@ body{
 }
 
 .view-larger-map a:hover {
-  color: gold;
+    color: gold;
 }
 
 /* CSS for dark mode toggle */
