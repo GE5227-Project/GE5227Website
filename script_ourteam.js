@@ -77,3 +77,16 @@ window.onscroll = function() {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+// for toggling dark mode
+var darkMode = document.querySelectorAll('html, body, h1, .hr, .navbar, .dropdown-content, .switch-text, .overlay-text, .popup-shiyun, .popup-wenling, .popup-yujun, .popup-jeremias, p');
+
+var darkToggle = document.querySelector("label input");
+darkToggle.addEventListener("click", myFunction);
+
+function myFunction() {
+    for (i = 0; i < darkMode.length; i++) {
+        darkMode[i].classList.toggle("dark-mode");
+    }
+}

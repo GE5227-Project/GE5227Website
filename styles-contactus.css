@@ -26,7 +26,7 @@ body{
 }
 
 /*Styling details of heading of contact form*/
-.contact-form h2{
+h2{
   color: #48494B;
   text-align: center;
   font-size: 2em;
@@ -161,4 +161,20 @@ body{
   border-radius: 4px;
 }
 
+
+/* CSS for dark mode toggle */
+body.dark-mode {
+    background: url(background-inverted.jpg) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+}
+
+h2.dark-mode {
+    color:white;
+}
+
+.contact-form.dark-mode {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
 

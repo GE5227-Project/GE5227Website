@@ -16,17 +16,17 @@ html {
 
 /* Track */
 .dark-mode ::-webkit-scrollbar-track {
-  background: #333333; 
+  background: #222222; 
 }
  
 /* Handle */
 .dark-mode ::-webkit-scrollbar-thumb {
-  background: #656565; 
+  background: #555555; 
 }
 
 /* Handle on hover */
 .dark-mode ::-webkit-scrollbar-thumb:hover {
-  background: #555555; 
+  background: #444444; 
 }
 
 body {

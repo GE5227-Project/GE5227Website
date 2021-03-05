@@ -7,37 +7,54 @@
     <link rel="stylesheet" href="reset.css">
     <!-- link new outside style -->
     <link rel="stylesheet" href="style-aboutus.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!--add icon kit: https://www.w3schools.com/icons/fontawesome5_intro.asp -->
+    <script src="script_aboutus.js" defer></script>
 	
-<div class="navbar"> <!-- add navigation bar -->
-    <a href="home.html">Home</a>
-    <a href="our_team.html">Our Team</a>
-    <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-            <a href="about_us.html#Ho Shi Yun">Ho Shi Yun</a>
-            <a href="about_us.html#Lyu Wenling">Lyu Wenling</a>
-            <a href="about_us.html#Hou Yujun">Hou Yujun</a>
-            <a href="about_us.html#Liew Jeremias">Jeremias Liew</a>
+    <div class="banner" style="background-image: none; background-color: black;">
+        <div class="banner-caption">
+            <span class="border">更高，更快，更强</span>
         </div>
     </div>
-    <div class="dropdown">
-        <button class="dropbtn">Our Work</button>
-        <div class="dropdown-content">
-            <a href="our_work.html#1">Project 1</a>
-            <a>In Progress</a>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="our_team.html">Our Team</a>
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="about_us.html#HO_Shi_Yun">Ho Shi Yun</a>
+                <a href="about_us.html#LYU_Wenling">Lu Wenling</a>
+                <a href="about_us.html#HOU_Yujun">Hou Yujun</a>
+                <a href="about_us.html#Jeremias_LIEW">Jeremias Liew</a>
+            </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn">Our Work
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="our_work.html#1">Project 1</a>
+                <a href="our_work_inprogress.html">In Progress</a>
+            </div>
+        </div>
+        <a href="contact_us.html">Contact Us</a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div class="switch-text">Light Mode</div>
+        <div class="overlay-text">Dark Mode</div>
     </div>
-    <a href="contact_us.html">Contact Us</a>
-</div>
 </head>
 <body>
     
 <!-- shiyun -->
-<div Id="Ho Shi Yun"> <!--create the id to link this location to the navbar name button-->
+<div Id="HO_Shi_Yun"> <!--create the id to link this location to the navbar name button-->
 <div class="header"> <!-- create the header div  -->
 <div class="name w"> <!-- create name and link the "w" style in css -->
      <!-- add the header content  -->
@@ -102,7 +119,7 @@
     
     
 <!-- wenling --> 
-<div Id="Lyu Wenling">
+<div Id="LYU_Wenling">
 <!-- create the header div -->
 <div class="header">
 
@@ -171,7 +188,7 @@
 </div>
 	
 <!-- yujun -->    
-<div id="Hou Yujun">
+<div id="HOU_Yujun">
 <!-- create the header div -->
 <div class="header">
 
@@ -237,7 +254,7 @@
 </div>
     
 <!-- jeremias --> 
-<div id="Liew Jeremias">
+<div id="Jeremias_LIEW">
 <!-- create the header div -->
 <div class="header">
 

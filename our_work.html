@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="styles-ourworkmain.css">
     <link rel="stylesheet" href="styles-navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="ouworkanimation.js" defer></script>
 
 </head>
 <body>
     <div class="banner" style="background-image: none; background-color: black;">
         <div class="banner-caption">
-            <span class="border">SOME TAG LINE</span>
+            <span class="border">更高，更快，更强</span>
         </div>
     </div>
-    <div class="navbar"> <!--Navigation Bar-->
+    <div class="navbar">
         <a href="home.html">Home</a>
         <a href="our_team.html">Our Team</a>
         <div class="dropdown">
@@ -39,6 +40,12 @@
             </div>
         </div>
         <a href="contact_us.html">Contact Us</a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div class="switch-text">Light Mode</div>
+        <div class="overlay-text">Dark Mode</div>
     </div>
     
     <section>
@@ -62,19 +69,6 @@
     <div class="view-larger-map">
         <a href="https://storymaps.arcgis.com/stories/5b8cb461384e4d67a32df125cb1084d9" target=”_blank” title="Click to visit the storymap website">View Larger Story Map</a>
     </div>
-    <!--Script for scroll effect-->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementsByClassName("navbar")[0].style.top = "80px";
-            } else {
-                document.getElementsByClassName("navbar")[0].style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
-    </script>
 </body>
 
   
