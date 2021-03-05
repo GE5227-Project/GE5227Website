@@ -1,7 +1,3 @@
-<?php include 'sendemail.php'; ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -51,9 +47,7 @@
         <a href="contact_us.html">Contact Us</a>
     </div>
       
-    <!--alert messages start-->
-    <?php echo $alert; ?>
-    <!--alert messages end-->
+
 
     <!--map embed box by Google-->
        <div class="contact-map">
@@ -68,7 +62,7 @@
       <div class="contact-form">
         <h2><span style="font-size: 2em">Contact Us</span></h2>
           <p>We would love to hear from you.<br> If you have any queries, do drop us a note in the form below.</p>
-        <form class="contact" action="" method="post">
+        <form class="contact" action="https://formspree.io/f/xnqokyol" method="post">
           <input type="text" name="name" class="text-box" placeholder="Your Name" required>
           <input type="email" name="email" class="text-box" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
