@@ -39,7 +39,7 @@
     /*set text center*/
     text-align: left;
     font:bold 40px Helvetica;
-    padding-top:100px;
+    padding-top:60px;
     margin-bottom: 20px;
 }
 
@@ -73,23 +73,22 @@
 
 /* set the size and padding of images in content*/
 .content img{
-    width:220px;
-    height: 200px;
+    width:300px;
     padding-top:20px; 
 }
 
 /*add the hover style to pictures*/
 .content img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.3s;
 }
 
 /*set the icons tag style*/
 .icons{
     list-style: none;
-    padding-left: 500px;
+    padding-left: 600px;
 	padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 
 /*set the style of logos*/
@@ -98,7 +97,7 @@
     position: relative;
     height: 40px;
     width: 40px;
-    display: inline-block;
+    display: inline-block; /*display list items horizontally instead of vertically*/
     margin: 0 10px;
     cursor:pointer;
 }
@@ -113,8 +112,8 @@
     left:0;
     z-index: -1;
     border-radius: 10%;
-    background: linear-gradient(45deg, #1a2126, #868d93);
-    transition: all 0.3s ease-in;
+    background: linear-gradient(45deg, #1a2126, #868d93); /*add a gradient color */
+    transition: all 0.3s ease-in;/*set the transition effect*/
 }
 
 /*add rotate effects that will be changing before hovering*/
@@ -129,13 +128,11 @@
     line-height: 40px;
     font-size: 15px;
     transition: all 0.3s ease-out;
-
 }
 
 /*add effects that when hovering over logos*/
 .icons li:hover a span{
-    transform: scale(1.9);
-    
+    transform: scale(1.6);  
 }
 
 
