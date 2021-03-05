@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="styles-ourworkinprogress.css">
     <link rel="stylesheet" href="styles-navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="script_ourworkinprogress.js" defer></script>
 </head>
     
 <body>
     <div class="banner" style="background-image: none; background-color: black;">
         <div class="banner-caption">
-            <span class="border">SOME TAG LINE</span>
+            <span class="border">更高，更快，更强</span>
         </div>
     </div>
     <!--navigation bar-->
@@ -40,6 +40,12 @@
             </div>
         </div>
         <a href="contact_us.html">Contact Us</a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div class="switch-text">Light Mode</div>
+        <div class="overlay-text">Dark Mode</div>
     </div>
     
     <!--Image background for countdown-->
@@ -81,20 +87,6 @@
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
-    </script>
-    
-    <!--Script for Scroll Effect-->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementsByClassName("navbar")[0].style.top = "80px";
-            } else {
-                document.getElementsByClassName("navbar")[0].style.top = "-50px";
-            }
-            prevScrollpos = currentScrollPos;
-        }
     </script>
     
     

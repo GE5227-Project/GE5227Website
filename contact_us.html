@@ -10,15 +10,13 @@
         <link rel="stylesheet" href="styles-contactus.css">
         <link rel="stylesheet" href="styles-navbar.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+        <script src="script_contactus.js" defer></script>
     </head>
     
     <body>
-      
-        <div class="banner" style="background-image: none; background-color: black;">
-            <div class="banner-caption">
-                <span class="border">SOME TAG LINE</span>
-            </div>
+    <div class="banner" style="background-image: none; background-color: black;">
+        <div class="banner-caption">
+            <span class="border">更高，更快，更强</span>
         </div>
     
         <div class="navbar">
@@ -46,54 +44,43 @@
             </div>
             <a href="contact_us.html">Contact Us</a>
         </div>
-
-
-
-        <!--map embed box by Google-->
-        <div class="contact-map">
-               <h2><span style="font-size: 2em">Locate Us</span></h2><br><br>
-               <iframe width="650px" height="650" align="center" frameborder="0" scrolling="no" marginheight="0px" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=650&amp;hl=en&amp;q=1.2953280686798114,%20103.77101693006041+(Faculty%20of%20Arts%20and%20Social%20Science)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a>
-               </div> 
-
-
-               <br><br>
-
-          <!--cont form starts-->
-        <div class="contact-form">
-            <h2><span style="font-size: 2em">Contact Us</span></h2>
-            <p>We would love to hear from you.<br> If you have any queries, do drop us a note in the form below.</p>
-            <form class="contact" action="https://formspree.io/f/xnqokyol" method="post">
-            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+        <a href="contact_us.html">Contact Us</a>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+        </label>
+        <div class="switch-text">Light Mode</div>
+        <div class="overlay-text">Dark Mode</div>
+    </div>
+      
+    <!--map embed box by Google-->
+       <div class="contact-map">
+           <h2><span style="font-size: 2em">Locate Us</span></h2><br><br>
+           <iframe width="650px" height="650" align="center" frameborder="0" scrolling="no" marginheight="0px" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=650&amp;hl=en&amp;q=1.2953280686798114,%20103.77101693006041+(Faculty%20of%20Arts%20and%20Social%20Science)&amp;t=&amp;z=19&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/route-planner.htm"></a>
+           </div> 
+               
+           
+           <br><br>
+           
+      <!--cont form starts-->
+      <h2><span style="font-size: 2em">Contact Us</span></h2>
+      <div class="contact-form">
+          <p>We would love to hear from you.<br> If you have any queries, do drop us a note in the form below.</p>
+        <form class="contact" action="https://formspree.io/f/xnqokyol" method="post">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <input type="submit" name="submit" class="send-btn" value="Send">
             </form>
           </div>
 
 
-        <!--contact section ends-->
+    <script type="text/javascript">
+    if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
 
-        <script type="text/javascript">
-        if(window.history.replaceState){
-            window.history.replaceState(null, null, window.location.href);
-        }
-        </script>
-
-        <!--script for scroll effect-->
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-                var currentScrollPos = window.pageYOffset;
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementsByClassName("navbar")[0].style.top = "80px";
-                } else {
-                    document.getElementsByClassName("navbar")[0].style.top = "-50px";
-                }
-                prevScrollpos = currentScrollPos;
-            }
-        </script>
-    
-    
   </body>
 
 </html>
