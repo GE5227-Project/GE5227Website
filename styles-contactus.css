@@ -1,7 +1,7 @@
 /*Customisation of background elements and cursor*/
 
 body{
-    background: url(background.png) no-repeat;
+    background: url(images/background.png) no-repeat;
     background-size: cover;
     max-width: 100%;
 }
@@ -181,7 +181,7 @@ h3 {
 }
 
 body.dark-mode {
-    background: url(background-inverted.jpg) no-repeat;
+    background: url(images/background-inverted.jpg) no-repeat;
     background-size: cover;
     max-width: 100%;
 }

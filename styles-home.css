@@ -21,7 +21,7 @@ body {
 /* Baground image and parrallax scrolling */
 .bgimg {
     /* Background image */
-    background-image: url("home-image.png");
+    background-image: url("images/home-image.png");
     
     /* Full height */
     height: 100%;
