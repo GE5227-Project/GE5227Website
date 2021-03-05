@@ -15,7 +15,7 @@
             <span class="border">SOME TAG LINE</span>
         </div>
     </div>
-    <div class="navbar">
+    <div class="navbar"> <!--Navigation Bar-->
         <a href="home.html">Home</a>
         <a href="our_team.html">Our Team</a>
         <div class="dropdown">
@@ -42,6 +42,7 @@
     </div>
     
     <section>
+    <!--Cicular Picture Sections-->
     <div class="hover01">
       <div>
           <figure><a href=#storymap><img src="ourworkmain.jpg"></a></figure>
@@ -54,12 +55,14 @@
     </div>
     </section>
     
+    <!--Story Map-->
     <div id="storymap" style="height: 615px;">
         <iframe src="https://storymaps.arcgis.com/stories/5b8cb461384e4d67a32df125cb1084d9?header" width="100%" height="620px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
     </div>
     <div class="view-larger-map">
         <a href="https://storymaps.arcgis.com/stories/5b8cb461384e4d67a32df125cb1084d9" target=”_blank” title="Click to visit the storymap website">View Larger Story Map</a>
     </div>
+    <!--Script for scroll effect-->
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
@@ -74,31 +77,5 @@
     </script>
 </body>
 
-    <!-- src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"-->
-<!--
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
--->
+  
 </html>
