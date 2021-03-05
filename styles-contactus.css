@@ -165,6 +165,21 @@ h3 {
 
 
 /* CSS for dark mode toggle */
+
+/* using webkit as a pseudo element to change the colours of the scrollbar in dark mode */
+.dark-mode ::-webkit-scrollbar {
+    width: auto;
+}
+.dark-mode ::-webkit-scrollbar-track {
+    background: #222222; 
+}
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: #555555; 
+}
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #444444; 
+}
+
 body.dark-mode {
     background: url(background-inverted.jpg) no-repeat;
     background-size: cover;

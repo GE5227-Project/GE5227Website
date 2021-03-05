@@ -1,3 +1,4 @@
+// Script for scroll effect
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
@@ -9,12 +10,12 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
+// For toggling dark mode
 var darkMode = document.querySelectorAll('html, .footnote, .main-text, .navbar, .dropdown-content, .main-text-img, .switch-text, .overlay-text');
-
 var darkToggle = document.querySelector("label input");
-darkToggle.addEventListener("click", myFunction);
+darkToggle.addEventListener("click", toggleDark);
 
-function myFunction() {
+function toggleDark() {
     for (i = 0; i < darkMode.length; i++) {
         darkMode[i].classList.toggle("dark-mode");
     }
