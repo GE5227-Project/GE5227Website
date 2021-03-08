@@ -87,7 +87,9 @@ window.onscroll = function() {
 
 
 // For toggling dark mode
-var darkMode = document.querySelectorAll('html, body, h1, .hr, .navbar, .dropdown-content, .switch-text, .overlay-text, .popup-shiyun, .popup-wenling, .popup-yujun, .popup-jeremias, p');
+var darkMode = document.querySelectorAll('html, body, h1, .hr, .navbar, .dropdown-content, \
+.switch-text, .overlay-text, .popup-shiyun, .popup-wenling, \
+.popup-yujun, .popup-jeremias, p, .close');
 var darkToggle = document.querySelector("label input");
 darkToggle.addEventListener("click", toggleDark);
 
