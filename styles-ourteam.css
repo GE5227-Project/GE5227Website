@@ -59,7 +59,7 @@ h1 {
 
 /* A button to close the popup */
 .close {
-    background-color: transparent;
+    content: url('close-button-2.png');
     width:15px;
     height:15px;
     position:relative;
@@ -571,6 +571,10 @@ h1 {
 .dark-mode {
     background-color: black;
     color: white;
+}
+
+.close.dark-mode {
+    content: url('close-button-white.png');
 }
 
 .hr.dark-mode {
