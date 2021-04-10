@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+
+/*formatting for fading imagery*/
+.hover01{
+    margin-top: 12em;
+    margin-bottom: 12em;
+    font-weight: 300;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    /*max-width: 100%;
+    margin-top: 10%;
+    margin-bottom: 300px;
+    padding-right: 300px;
+    padding-left: 300px;
+    font-weight: 300;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;*/
+
+}
+
+.hover01 figure img {
+    border-radius: 100%;
+}
+
+
+.hover01 figure:hover img {
+    filter:blur(2px);
+}
+
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100%
+}
+
+.bgimg {
+    /* Background image */
+    background-image: url('images/inprogressbackground.jpg');
+    /* Full-screen */
+    height: 100%;
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: Helvetica, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+    width: 100%;
+    padding: 100px;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/*Adjustment to the respective media screen sizes*/
+@media screen and (max-width: 950px){
+  
+    .hover01 figure img{
+        width:100%
+        }  
+
+}
+
+
+/* CSS for dark mode toggle */
+
+/* using webkit as a pseudo element to change the colours of the scrollbar in dark mode */
+.dark-mode ::-webkit-scrollbar {
+    width: auto;
+}
+.dark-mode ::-webkit-scrollbar-track {
+    background: #222222; 
+}
+.dark-mode ::-webkit-scrollbar-thumb {
+    background: #555555; 
+}
+.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #444444; 
+}
+
+.dark-mode {
+    background-color: black;
+    color:white;
+}
